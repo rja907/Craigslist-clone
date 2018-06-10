@@ -1734,3 +1734,155 @@ Started GET "/terms" for 127.0.0.1 at 2018-06-11 01:46:58 +0530
 Processing by PagesController#terms as HTML
   Rendered pages/terms.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 38ms (Views: 37.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-11 01:50:35 +0530
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/960_24_col.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2018-06-11 01:50:36 +0530
+
+
+Started GET "/service-worker.js" for 127.0.0.1 at 2018-06-11 01:50:37 +0530
+
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.9ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-06-11 01:50:37 +0530
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/960_24_col.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:43 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:43 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:43 +0530
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2018-06-11 01:50:43 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-11 01:58:45 +0530
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/960_24_col.css?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+
+
+Started GET "/contact" for 127.0.0.1 at 2018-06-11 01:58:46 +0530
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/service-worker.js" for 127.0.0.1 at 2018-06-11 01:58:48 +0530
+
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
