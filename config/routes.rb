@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   match '/scams', to:'pages#scams', via: :get
   match '/safety', to:'pages#safety', via: :get
   match '/terms', to:'pages#terms', via: :get
+  match '/privacy', to:'pages#privacy', via: :get
 end
