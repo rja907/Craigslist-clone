@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   end
   def safety
   end
+  def terms
+  end
 end
