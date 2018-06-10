@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   match '/safety', to:'pages#safety', via: :get
   match '/terms', to:'pages#terms', via: :get
   match '/privacy', to:'pages#privacy', via: :get
+  match '/about', to:'pages#about', via: :get
 end
