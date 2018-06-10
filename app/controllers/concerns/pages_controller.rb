@@ -3,4 +3,6 @@ class PagesController < ApplicationController
   end
   def scams
   end
+  def safety
+  end
 end
