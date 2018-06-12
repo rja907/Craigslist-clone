@@ -1886,3 +1886,78 @@ ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
   Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.1ms)
   Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
   Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (78.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'community'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "community"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'housing'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "housing"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'activities' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "activities"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'classes' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "classes"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'events' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "events"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[36mCategory Load (1.1ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT "subcategories".* FROM "subcategories"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'community'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'housing'  ORDER BY "categories"."id" ASC LIMIT 1[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'activities' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "activities"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'classes' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "classes"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'events' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "events"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'community'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'housing'  ORDER BY "categories"."id" ASC LIMIT 1[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'activities' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "activities"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'classes' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "classes"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'events' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("name") VALUES (?)  [["name", "events"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mCategory Load (1.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT "subcategories".* FROM "subcategories"
+  [1m[36mSubcategory Load (0.3ms)[0m  [1mSELECT "subcategories".* FROM "subcategories"[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "subcategories"
+  [1m[36mSubcategory Load (0.4ms)[0m  [1mSELECT "subcategories".* FROM "subcategories"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'community'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'housing'  ORDER BY "categories"."id" ASC LIMIT 1[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'activities' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 1], ["name", "activities"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'classes' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 1], ["name", "classes"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'events' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 1], ["name", "events"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36mSubcategory Load (1.4ms)[0m  [1mSELECT "subcategories".* FROM "subcategories"[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
