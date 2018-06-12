@@ -25,24 +25,15 @@
     <div class="center-one">
       <table>
         <tr>
-          <th class="table-header">community</th>
+          <th class="table-header"><%= link_to 'community' %></th>
         </tr>
         <tr>
           <td>
+            <% @community.subcategories.each do |subcategory| %>
             <ul class="left-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
-            <ul class="right-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+            <% end %>
           </td>
         </tr>
       </table>

@@ -15,3 +15,4 @@
 10. Define data for `config/seeds.rb` file and run `rake db:seed` to make sure that duplicate data is not being stored and the CRUD operations are running in the Database.
 11. Use `rails c` on the terminal and type `<Record Name>.all` to see the record data.
 12. Repeat this step for all the categories.
+13. Use the Controller to fetch the data from the database and use that fetched data to change the view of the page.
