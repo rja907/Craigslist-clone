@@ -1961,3 +1961,843 @@ ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[36mSubcategory Load (1.4ms)[0m  [1mSELECT "subcategories".* FROM "subcategories"[0m
   [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories"
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-13 00:06:34 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#index as HTML
+  Rendered categories/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 125ms (Views: 115.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/960_24_col.css?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2018-06-13 00:06:35 +0530
+
+
+Started GET "/service-worker.js" for 127.0.0.1 at 2018-06-13 00:06:36 +0530
+
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  actionpack (4.1.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.0) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.0) lib/rails/engine.rb:514:in `call'
+  railties (4.1.0) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/raj/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.5ms)
+  Rendered /Users/raj/.rvm/gems/ruby-2.3.3/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (109.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'community'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'housing'  ORDER BY "categories"."id" ASC LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'personals'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "personals"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'for sale'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "for sale"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'jobs'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "jobs"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'services'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "services"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'discussion forum'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "discussion forum"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."name" = 'gigs'  ORDER BY "categories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("name") VALUES (?)  [["name", "gigs"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'activities' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'classes' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'events' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'musicians' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 1], ["name", "musicians"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'news' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 1], ["name", "news"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'general' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 1], ["name", "general"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'pets' AND "subcategories"."category_id" = 1  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 1], ["name", "pets"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'apts/housing for rent' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "apts/housing for rent"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'apts wanted' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "apts wanted"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.3ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'housing swap' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "housing swap"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'office & command' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "office & command"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.3ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'parking & storage' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "parking & storage"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'real estate -by broker' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "real estate -by broker"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'real estate -by owner' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "real estate -by owner"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'room & shares' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "room & shares"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'rooms wanted' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "rooms wanted"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sublets & temporary' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "sublets & temporary"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sublet/temporary wanted' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "sublet/temporary wanted"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'vacation renters' AND "subcategories"."category_id" = 2  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 2], ["name", "vacation renters"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'antiques' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "antiques"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'appliances' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "appliances"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'arts+crafts' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "arts+crafts"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'atv/utv/sno' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "atv/utv/sno"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'auto parts' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "auto parts"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'baby+kid' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "baby+kid"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'barter' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "barter"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'beauty+hlth' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "beauty+hlth"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'bikes' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "bikes"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.3ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'books' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "books"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'business' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "business"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.1ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'boats' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)[0m  [["category_id", 4], ["name", "boats"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mSubcategory Load (0.2ms)[0m  [1mSELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'business' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'cars+trucks' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "cars+trucks"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'cds/dvd/vhs' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "cds/dvd/vhs"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'cell phones' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "cell phones"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'collectibles' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "collectibles"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'computers' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "computers"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'electronices' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "electronices"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'farm+garden' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "farm+garden"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.4ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'free' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "free"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'furniture' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "furniture"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'garage sale' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "garage sale"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'general' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "general"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'heavy equip' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "heavy equip"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'household' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "household"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'jewelry' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "jewelry"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'materials' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "materials"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'motorcycles' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "motorcycles"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'music instr' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "music instr"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'photo+video' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "photo+video"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'rvs+camp' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "rvs+camp"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sporting' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "sporting"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'tickets' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "tickets"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'tools' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "tools"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'toys+games' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "toys+games"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'video gaming' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "video gaming"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'wanted' AND "subcategories"."category_id" = 4  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 4], ["name", "wanted"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'computer' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "computer"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'creative' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "creative"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'crew' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "crew"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'domestic' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "domestic"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'event' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "event"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'labor' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "labor"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'talent' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "talent"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'writing' AND "subcategories"."category_id" = 8  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 8], ["name", "writing"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'strictly platonic' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "strictly platonic"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'women seeking women' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "women seeking women"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'women seeking men' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "women seeking men"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'men seeking women' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "men seeking women"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'men seeking men' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "men seeking men"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'misc romance' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "misc romance"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'casual encounters' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "casual encounters"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'missed connections' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "missed connections"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'rants and raves' AND "subcategories"."category_id" = 3  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 3], ["name", "rants and raves"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'automative' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "automative"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'beauty' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "beauty"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'computer' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "computer"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'creative' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "creative"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'cycle' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "cycle"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'event' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "event"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'farm+garden' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "farm+garden"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'financial' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "financial"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'household' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "household"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'labor/move' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "labor/move"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'legal' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "legal"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'lessons' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "lessons"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'marine' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "marine"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'pet' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "pet"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'real estate' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "real estate"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'skilled trade' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "skilled trade"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sm biz ads' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "sm biz ads"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'therapeutic' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "therapeutic"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'travel/vacation' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "travel/vacation"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'write/ed/tr8' AND "subcategories"."category_id" = 6  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 6], ["name", "write/ed/tr8"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'accounting+finance' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "accounting+finance"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'admin/office' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "admin/office"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'art/media/design' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "art/media/design"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'biotech/science' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "biotech/science"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'business/mgmt' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "business/mgmt"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'food/bev/hosp' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "food/bev/hosp"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'general labor' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "general labor"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'government' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "government"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'human resources' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "human resources"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'internet engineers' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "internet engineers"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'legal/paralegal' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "legal/paralegal"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'manufacturing' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "manufacturing"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'marketing/pr/ad' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "marketing/pr/ad"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'medical/health' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "medical/health"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'nonprofit sector' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "nonprofit sector"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'real estate' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "real estate"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'retail wholesale' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "retail wholesale"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sales/biz dev' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "sales/biz dev"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'salon/spa/fitness' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "salon/spa/fitness"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'security' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "security"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'skilled trade/craft' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "skilled trade/craft"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'software/qa/dba' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "software/qa/dba"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'systems/network' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "systems/network"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'technical support' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "technical support"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'transport' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "transport"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'tv/film/video' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "tv/film/video"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'web/info design' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "web/info design"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'writing/editing' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "writing/editing"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = '[ETC]' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "[ETC]"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = '[part-time]' AND "subcategories"."category_id" = 5  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 5], ["name", "[part-time]"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'apple' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "apple"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'arts' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "arts"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'atheist' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "atheist"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'autos' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "autos"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'beauty' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "beauty"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'bikes' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "bikes"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'celebs' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "celebs"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'comp' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "comp"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'crafts' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "crafts"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'diet' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "diet"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'divorce' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "divorce"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'dying' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "dying"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'eco' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "eco"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'education' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "education"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'feedbk' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "feedbk"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'film' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "film"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'fitness' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "fitness"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'fixit' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "fixit"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'food' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "food"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'frugal' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "frugal"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'gaming' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "gaming"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'garden' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "garden"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'haiku' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "haiku"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'help' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "help"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'history' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "history"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'housing' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "housing"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'jobs' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "jobs"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'jokes' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "jokes"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'kinks' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "kinks"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'legal' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "legal"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'linux' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "linux"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'm4m' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "m4m"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'manners' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "manners"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'marriage' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "marriage"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'media' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "media"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'money' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "money"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'motorcycle' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "motorcycle"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'music' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "music"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'nonprofit' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "nonprofit"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'open' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "open"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'outdoor' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "outdoor"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'over 50' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "over 50"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'parent' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "parent"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'pets' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "pets"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'philosophy' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "philosophy"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'photo' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "photo"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'p.o.c.' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "p.o.c."]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'politics' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "politics"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'psychology' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "psychology"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'queer' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "queer"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'recover' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "recover"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'religion' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "religion"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'romance' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "romance"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'science' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "science"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'spirit' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "spirit"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'sports' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "sports"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'tax' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "tax"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'travel' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "travel"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'tv' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "tv"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.3ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'vegan' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "vegan"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'w4w' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "w4w"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'wed' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "wed"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'wine' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "wine"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'words' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "words"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.2ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'writing' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "writing"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubcategory Load (0.1ms)[0m  SELECT  "subcategories".* FROM "subcategories"  WHERE "subcategories"."name" = 'yoga' AND "subcategories"."category_id" = 7  ORDER BY "subcategories"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subcategories" ("category_id", "name") VALUES (?, ?)  [["category_id", 7], ["name", "yoga"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
