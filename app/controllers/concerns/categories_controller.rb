@@ -7,5 +7,6 @@ class CategoriesController < ApplicationController
     @personals = @categories[2]
     @services = @categories[5]
     @jobs = @categories[4]
+    @gigs = @categories[7]
   end
 end

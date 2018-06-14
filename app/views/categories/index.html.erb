@@ -111,6 +111,21 @@
           </td>
         </tr>
       </table>
+      <br>
+      <table>
+        <tr>
+          <th class="table-header"><%= link_to 'gigs' %></th>
+        </tr>
+        <tr>
+          <td>
+            <% @gigs.subcategories.each do |subcategory| %>
+            <ul>
+              <li><%= link_to subcategory.name %></li>
+            </ul>
+            <% end %>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
   <div class="rightbar">
