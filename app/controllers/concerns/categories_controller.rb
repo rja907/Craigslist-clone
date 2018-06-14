@@ -9,4 +9,6 @@ class CategoriesController < ApplicationController
     @jobs = @categories[4]
     @gigs = @categories[7]
   end
+  def show
+  end
 end
