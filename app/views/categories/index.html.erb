@@ -39,17 +39,15 @@
       </table>
       <table>
         <tr>
-          <th class="table-header">personals</th>
+          <th class="table-header"><%= link_to 'personals' %></th>
         </tr>
         <tr>
           <td>
-            <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+            <% @personals.subcategories.each do |subcategory| %>
+              <ul>
+                <li><%= link_to subcategory.name %></li>
+              </ul>
+            <% end %>
           </td>
         </tr>
       </table>
