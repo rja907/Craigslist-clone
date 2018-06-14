@@ -5,5 +5,7 @@ class CategoriesController < ApplicationController
     @housing = @categories[1]
     @forsale = @categories[3]
     @personals = @categories[2]
+    @services = @categories[5]
+    @jobs = @categories[4]
   end
 end

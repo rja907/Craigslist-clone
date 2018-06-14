@@ -30,7 +30,7 @@
         <tr>
           <td>
             <% @community.subcategories.each do |subcategory| %>
-            <ul class="left-list">
+            <ul>
               <li><%= link_to subcategory.name %></li>
             </ul>
             <% end %>
@@ -53,24 +53,15 @@
       </table>
       <table>
         <tr>
-          <th class="table-header">services</th>
+          <th class="table-header"><%= link_to'services' %></th>
         </tr>
         <tr>
           <td>
-            <ul class="left-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+            <% @services.subcategories.each do |subcategory| %>
+            <ul>
+              <li><%= link_to subcategory.name %></li>
             </ul>
-            <ul class="right-list">
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-            </ul>
+            <% end %>
           </td>
         </tr>
       </table>
@@ -108,37 +99,15 @@
     <div class="center-three">
       <table>
         <tr>
-          <th class="table-header">jobs</th>
+          <th class="table-header"><%= link_to 'jobs' %></th>
         </tr>
         <tr>
           <td>
+            <% @jobs.subcategories.each do |subcategory| %>
             <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
+            <% end %>
           </td>
         </tr>
       </table>
