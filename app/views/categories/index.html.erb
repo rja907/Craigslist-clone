@@ -80,22 +80,15 @@
     <div class="center-two">
       <table>
         <tr>
-          <th class="table-header">housing</th>
+          <th class="table-header"><%= link_to 'housing'%></th>
         </tr>
         <tr>
           <td>
+            <% @housing.subcategories.each do |subcategory| %>
             <ul>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
-              <li>test</li>
+              <li><%= link_to subcategory.name %></li>
             </ul>
+            <% end %>
           </td>
         </tr>
       </table>
