@@ -16,4 +16,5 @@
 11. Use `rails c` on the terminal and type `<Record Name>.all` to see the record data.
 12. Repeat this step for all the categories.
 13. Use the Controller to fetch the data from the database and use that fetched data to change the view of the page.
-14. Showed the listings of the different subcategories with ids by inserting a `category_path`, making a show function in the Categories Controller and made a basic `show.html.erb`.
+14. Showed the listings of the different categories with ids by inserting a `category_path`, making a show function in the `CategoriesController` and made a basic `show.html.erb`.
+15. Showed the listings of different subcategories within categories with ids by inserting a `category_subcategory_path`, making a show function in the `SubcategoriesController` and made a basic `show.html.erb`.
