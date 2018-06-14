@@ -45,7 +45,7 @@
           <td>
             <% @personals.subcategories.each do |subcategory| %>
               <ul>
-                <li><%= link_to subcategory.name %></li>
+                <li><%= link_to subcategory.name, category_subcategory_path(@personals, subcategory)  %></li>
               </ul>
             <% end %>
           </td>
@@ -59,7 +59,7 @@
           <td>
             <% @services.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@services, subcategory)  %></li>
             </ul>
             <% end %>
           </td>
@@ -75,7 +75,7 @@
           <td>
             <% @housing.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@housing, subcategory)  %></li>
             </ul>
             <% end %>
           </td>
@@ -89,7 +89,7 @@
           <td>
             <% @forsale.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@forsale, subcategory)  %></li>
             </ul>
             <% end %>
           </td>
@@ -105,7 +105,7 @@
           <td>
             <% @jobs.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@jobs, subcategory)  %></li>
             </ul>
             <% end %>
           </td>
@@ -120,7 +120,7 @@
           <td>
             <% @gigs.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@gigs, subcategory)  %></li>
             </ul>
             <% end %>
           </td>
