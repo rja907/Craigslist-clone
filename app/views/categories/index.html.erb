@@ -31,7 +31,7 @@
           <td>
             <% @community.subcategories.each do |subcategory| %>
             <ul>
-              <li><%= link_to subcategory.name %></li>
+              <li><%= link_to subcategory.name, category_subcategory_path(@community, subcategory) %></li>
             </ul>
             <% end %>
           </td>
