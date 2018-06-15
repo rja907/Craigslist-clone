@@ -18,3 +18,4 @@
 13. Use the Controller to fetch the data from the database and use that fetched data to change the view of the page.
 14. Showed the listings of the different categories with ids by inserting a `category_path`, making a show function in the `CategoriesController` and made a basic `show.html.erb`.
 15. Showed the listings of different subcategories within categories with ids by inserting a `category_subcategory_path`, making a show function in the `SubcategoriesController` and made a basic `show.html.erb`.
+16. For the listings, we need the CRUD operations. So, add `resources :listings` to `routes.rb` file and then run `rake routes`.
