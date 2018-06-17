@@ -28,3 +28,5 @@
 23. Ran `rails g migration add_category_subcategory_to_listings` so that it is possible to have fields for categories and subcategories in `create_listing` form.
 24. Added code to `change` function and ran `rake db:migrate`.
 25. Added `find_by_category` method to select subcategories based on the category chosen and added a post request to `routes.rb` file.
+26. There is no use for loading JS every time so `//=require_tree.` was removed from `application.js` file.
+27. Added code to include js in the view, used `initializers` to `precompile js` file to select subcategories based on the category chosen and fixed bugs in `routes.rb` and `SubcategoriesController`.

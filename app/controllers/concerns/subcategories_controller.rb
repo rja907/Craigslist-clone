@@ -3,7 +3,7 @@ class SubcategoriesController < ApplicationController
   end
   def find_by_category
     category = Category.find(params[:category_id])
-    subcategory = category.subcategory.find_all
-    render json: { subcategory: subcategories }
+    subcategories = category.subcategories.find_all
+    render json: { subcategories: subcategories }
   end
 end
