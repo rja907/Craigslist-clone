@@ -17,8 +17,8 @@
       <%= f.label :state %>
       <%= f.text_field :state %>
       <%= f.label :zipcode %>
-      <%= f.text_field :zipcode %>
-      <%= f.submit %>
+      <%= f.text_field :zipcode, class: "zip-width", maxlength: "5" %>
+      <%= f.submit class:"create-button" %>
     <% end %>
   </div>
 </div>
