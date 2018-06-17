@@ -23,4 +23,5 @@
 18. Made a Listings view page and added a form to Create Listings. A new instance of the Listing was initiated in the `ListingsController`.
 19. To submit the form, there is a need of a `create` action in the `ListingsController`.
 20. Another private method called `listing_params` was made to make sure that only the specific data is passed through the parameters.
-21. We add code to save the form data and reditrect the users to the root path after clicking submit.
+21. We add code to save the form data and reditrect the users to the listing after clicking submit.
+22. Added code to the ListingsController to show the listings page on form submit and added a file for the view. As we submit the form, sqlite3 database also got updated.

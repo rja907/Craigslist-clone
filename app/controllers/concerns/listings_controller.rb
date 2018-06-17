@@ -5,7 +5,9 @@ class ListingsController < ApplicationController
   def create
     @listing = Listing.new(listing_params)
     @listing.save
-    reditrect_to_root_path
+    redirect_to @listing
+  end
+  def show
   end
   private
   def listing_params
