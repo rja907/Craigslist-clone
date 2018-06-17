@@ -27,3 +27,4 @@
 22. Added code to the ListingsController to show the listings page on form submit and added a file for the view. As we submit the form, sqlite3 database also got updated.
 23. Ran `rails g migration add_category_subcategory_to_listings` so that it is possible to have fields for categories and subcategories in `create_listing` form.
 24. Added code to `change` function and ran `rake db:migrate`.
+25. Added `find_by_category` method to select subcategories based on the category chosen and added a post request to `routes.rb` file.
