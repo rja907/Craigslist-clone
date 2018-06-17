@@ -22,3 +22,4 @@
 17. To use the listings CRUD operations, add a link to `index.html.erb`, then define the new function in the `ListingsController` and finally, add the template for `new.html.erb`.
 18. Made a Listings view page and added a form to Create Listings. A new instance of the Listing was initiated in the `ListingsController`.
 19. To submit the form, there is a need of a `create` action in the `ListingsController`.
+20. Another private method called `listing_params` was made to make sure that only the specific data is passed through the parameters.
