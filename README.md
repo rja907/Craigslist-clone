@@ -20,3 +20,4 @@
 15. Showed the listings of different subcategories within categories with ids by inserting a `category_subcategory_path`, making a show function in the `SubcategoriesController` and made a basic `show.html.erb`.
 16. For the listings, we need the CRUD operations. So, add `resources :listings` to `routes.rb` file and then run `rake routes`.
 17. To use the listings CRUD operations, add a link to `index.html.erb`, then define the new function in the `ListingsController` and finally, add the template for `new.html.erb`.
+18. Made a Listings view page and added a form to Create Listings. A new instance of the Listing was initiated in the ListingsController.
