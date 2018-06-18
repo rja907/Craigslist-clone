@@ -13,9 +13,17 @@
      <div class="lowest-price">lowest-price</div>
    </div>
   <ul class="list-margin">
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
+    <% if @listings.present? %>
+      <% @listings.each do |listing| %>
+      <li>
+        <span>
+          <%= listing.created_at.strftime('%B %d, %Y') %>
+        </span>
+        <%= link_to listing.title, listing %> - (<%= listing.city %>, <%= listing.state %>)
+      </li>
+      <% end %>
+    <% else %>
+      <p>No listings found!!</p>
+      <% end %>
   </ul>
 </div>
