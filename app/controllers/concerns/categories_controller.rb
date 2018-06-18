@@ -10,5 +10,6 @@ class CategoriesController < ApplicationController
     @gigs = @categories[7]
   end
   def show
+    @listings = Listing.where(category_id: params[:id])
   end
 end

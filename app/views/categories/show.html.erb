@@ -13,9 +13,14 @@
      <div class="lowest-price">lowest-price</div>
    </div>
   <ul class="list-margin">
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
-    <li><span>November 14</span> Listing here! (MN)</li>
+
+    <% @listings.each do |listing| %>
+    <li>
+      <span>
+        <%= listing.created_at %>
+      </span>
+      <%= listing.title %> (<%= listing.city %>, <%= listing.state %>)
+    </li>
+    <% end %>
   </ul>
 </div>
