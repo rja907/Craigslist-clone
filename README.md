@@ -34,3 +34,4 @@
 29. Added views for pages when there is no listing data for a particular Category or Subcategory.
 30. Added `geocoder` gem for search functionality for the listings and added code to `listings.rb` to join the details of the location.
 31. Ran `rails g migration add_lat_long_to_listings` and added code to change function for the type of latitude and longitude. After that, ran `rake db:migrate`.
+32. Added code to `ListingsController`, `Listings model` and `index.html.erb` to support search functionality for all the listings using the data present.
