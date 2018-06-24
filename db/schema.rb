@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180617121506) do
+ActiveRecord::Schema.define(version: 20180624174402) do
 
   create_table "categories", force: true do |t|
     t.string "name"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 20180617121506) do
     t.datetime "updated_at"
     t.integer  "category_id"
     t.integer  "subcategory_id"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "subcategories", force: true do |t|
