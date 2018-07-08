@@ -13,6 +13,8 @@ class ListingsController < ApplicationController
   def search
     @listings = Listing.search(params)
   end
+  def mylistings
+  end
   private
   def listing_params
     params.require(:listing).permit(:title, :description, :city, :state, :zipcode, :category_id, :subcategory_id)
