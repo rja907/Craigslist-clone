@@ -3,7 +3,10 @@
     <a href="#"><h1>Rajslist</h1></a>
     <ul>
       <%= link_to 'post to classifieds', new_listing_path %>
-      <li><%= link_to 'my account', new_user_session_path %></li>
+      <% if user_signed_in? %>
+        <li><%= link_to 'my account', edit_user_session_path %></li>
+        <li><%= link_to 'log out', destroy_user_session_path, method: delete %></li>
+      <% end %>
     </ul>
     <form>
       <p>search Rajslist</p>
