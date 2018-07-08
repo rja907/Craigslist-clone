@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180702024512) do
+ActiveRecord::Schema.define(version: 20180708213503) do
 
   create_table "categories", force: true do |t|
     t.string "name"
@@ -29,7 +29,10 @@ ActiveRecord::Schema.define(version: 20180702024512) do
     t.integer  "subcategory_id"
     t.float    "latitude"
     t.float    "longitude"
+    t.integer  "user_id"
   end
+
+  add_index "listings", ["user_id"], name: "index_listings_on_user_id"
 
   create_table "subcategories", force: true do |t|
     t.string  "name"
