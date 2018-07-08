@@ -36,3 +36,5 @@
 31. Ran `rails g migration add_lat_long_to_listings` and added code to change function for the type of latitude and longitude. After that, ran `rake db:migrate`.
 32. Added code to `ListingsController`, `Listings model` and `index.html.erb` to support search functionality for all the listings using the data present.
 33. Added `devise` gem for Authentication functionality. Ran `rails generate devise:install`. Followed steps required to properly have devise working and ran `rails g devise:views`.
+34. Added functionality for logged in and guest users with different views and tested the login/logout features.
+35. Ran `rails g migration added_user_index_to_listings`. After that, ran `rake db:migrate`. This adds the user index to listings so that it is easier to code a functionality for the user to look at their listings.
