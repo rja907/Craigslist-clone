@@ -1,5 +1,7 @@
 # Craigslist Clone
 
+> I took on this project to learn Ruby by example on the weekends/free time. I doubt this will be of use to anyone.
+
 #### Project Flow:
 
 1. Run rails new <Project-Name-Here>.
