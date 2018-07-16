@@ -1,7 +1,9 @@
 class Listing < ActiveRecord::Base
   belongs_to :category
   belongs_to :subcategory
-
+  belongs_to :user
+  validates :user_id, presence: true
+  
   geocoded_by :full_address
   after_validation :geocode
 
