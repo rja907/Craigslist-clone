@@ -4,6 +4,7 @@ class ListingsController < ApplicationController
   end
   def create
     @listing = Listing.new(listing_params)
+    @listing.user = current_user
     @listing.save
     redirect_to @listing
   end
@@ -14,6 +15,7 @@ class ListingsController < ApplicationController
     @listings = Listing.search(params)
   end
   def mylistings
+    @listings = Listing.where(user: current_user)
   end
   private
   def listing_params
