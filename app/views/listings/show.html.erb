@@ -11,6 +11,11 @@
        <p>posted <%= time_ago_in_words(@listing.created_at)%> ago!</p>
      <div class="listing-header"><%= @listing.title %></div>
    </div>
+   <div class="box">
+     <% if @listing.user == current_user %>
+       <p> <%= link_to 'edit', edit_listing_path%></p>
+     <% end %>
+   </div>
   <div>
     <p><%= @listing.description %></p>
   </div>
