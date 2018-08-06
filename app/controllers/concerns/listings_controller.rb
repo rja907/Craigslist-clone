@@ -14,6 +14,11 @@ class ListingsController < ApplicationController
   def edit
     @listing = Listing.find(params[:id])
   end
+  def update
+    @listing = Listing.find(params[:id])
+    @listing.update(listing_params)
+    redirect_to @listing
+  end
   def search
     @listings = Listing.search(params)
   end
