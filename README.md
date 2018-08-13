@@ -42,3 +42,4 @@
 36. Ran `rails g migration added_user_index_to_listings`. After that, ran `rake db:migrate`. This adds the user index to listings so that it is easier to code a functionality for the user to look at their listings.
 37. Added edit and delete buttons (and paths) for the user to have the functionality to delete or edit a listing that they posted.
 38. Added a file to to edit listings and added `update` and `destroy` actions for listings. Added breadcrumbs to all the static pages of the site.
+39. Added a validations for listings.
