@@ -1,4 +1,7 @@
 class ListingsController < ApplicationController
+  before_filter :authenticate_user!, only: [:new, :create]
+  before_filter :is_user? [:edit, :update, :delete]
+
   def new
     @listing = Listing.new
   end
@@ -33,5 +36,10 @@ class ListingsController < ApplicationController
   private
   def listing_params
     params.require(:listing).permit(:title, :description, :city, :state, :zipcode, :category_id, :subcategory_id)
+  end
+  def is_user?
+    @listing = Listing.find(params[:id])
+    unless current_user = @listing.user
+      redirect_to root_path, alert: "You don't have authorization."
   end
 end
